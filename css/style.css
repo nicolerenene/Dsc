@@ -131,6 +131,18 @@ table {
 }
 
 /*
+=================
+Body
+=================
+*/
+
+body {
+    background: #11073fe3;
+    color: rgb(39, 58, 110);
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
 ================
 Grid
 ================
@@ -144,11 +156,19 @@ Grid
     box-sizing: border-box;
 }
 
-.container {
+.container,
+.grid {
+    width: 960px;
     margin: 0 auto;
+}
+
+.container {
     padding-left: 30px;
     padding-right: 30px;
-    width: 960px;
+}
+
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
 }
 
 .group:before,
@@ -172,6 +192,12 @@ Rows
 ============
 */
 
+.row{
+    background: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;  
+}
+
 .row,
 .row-alt {
     min-width: 960px;
@@ -192,7 +218,7 @@ Rows
 
 /*
 =============
-Columns
+Teaser
 =============
 */
 
@@ -217,15 +243,8 @@ Columns
     padding-right: 15px;
 }
 
-.container,
-.grid {
-    margin: 0 auto;
-    width: 960px;
-}
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
+.teaser a:hover h3 {
+    color: #a9b2b9;
 }
 
 /*
@@ -233,10 +252,6 @@ Columns
 Typography
 ================
 */
-
-h1, h3, h4, h5, p {
-    margin-bottom: 22px;
-}
 
 h1, h2, h3, h4 {
     color: #6c89db;
@@ -276,46 +291,6 @@ em {
     font-style: italic;
 }
 
-/*
-===========
-Leads
-===========
-*/
-
-.lead {
-    text-align: center;
-}
-
-.lead p {
-    font-size: 21px;
-    line-height: 33px;
-}
-
-/*
-=============
-Links
-=============
-*/
-
-a {
-    color: #6c89db;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #a9b2b9;
-}
-
-p a {
-    border-bottom: 1px solid #dfe2e5;
-}
-
-/*
-===========
-Hero
-===========
-*/
-
 .btn {
     border-radius: 5px;
     color: #fff;
@@ -337,6 +312,40 @@ Hero
     color: #648880;
 }
 
+a {
+    color: #6c89db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a9b2b9;
+}
+
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+===========
+Leads
+===========
+*/
+
+.lead {
+    text-align: center;
+}
+
+.lead p {
+    font-size: 21px;
+    line-height: 33px;
+}
+
+/*
+===========
+Hero
+===========
+*/
+
 .hero {
     color: #fff;
     line-height: 44px;
@@ -353,6 +362,11 @@ Hero
     font-weight: 100;
 }
 
+.tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
+}
+
 /*
 ===============
 Header
@@ -365,18 +379,6 @@ Header
     margin-top: 4px;
     padding-top: .5em;
     padding-right: 1em;
-}
-
-.tagline {
-    margin: 66px 0 22px 0;
-    text-align: right;
-}
-
-.primary-nav {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
 }
 
 .primary-header a {
@@ -412,25 +414,14 @@ Primary Footer
 .primary-footer a:hover {
     color: #a9b2b9;
 }
-/*
-=================
-Body
-=================
-*/
 
-body {
-    color: #273a6e;
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+/* Primary Nav */
 
-/*
-==================
-Teaser
-==================
-*/
-
-.teaser a:hover h3 {
-    color: #a9b2b9;
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 /*
@@ -441,6 +432,11 @@ Navigation
 
 .nav {
     text-align: right;
+}
+
+img {
+    height: 106px;
+    width: 200px;
 }
 
 .nav li {
@@ -470,3 +466,4 @@ Speakers
 .speaker {
     margin-bottom: 44px;
 }
+
