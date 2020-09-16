@@ -1,3 +1,135 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /*
 ================
 Grid
@@ -32,6 +164,30 @@ Grid
 .group {
     clear: both;
     *zoom: 1;
+}
+
+/*
+============
+Rows
+============
+*/
+
+.row,
+.row-alt {
+    min-width: 960px;
+}
+
+.row {
+    background: #fff;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt {
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6fld3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6fld3);
+    background: linear-gradient(to right, #a1d3b0, #f6fld3);
+    padding: 44px 0 22px 0;
 }
 
 /*
@@ -121,6 +277,21 @@ em {
 }
 
 /*
+===========
+Leads
+===========
+*/
+
+.lead {
+    text-align: center;
+}
+
+.lead p {
+    font-size: 21px;
+    line-height: 33px;
+}
+
+/*
 =============
 Links
 =============
@@ -147,16 +318,27 @@ Hero
 
 .btn {
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
+    border: 1px solid #fff;
     padding: 10px 30px;
 }
 
+.btn-alt:hover {
+    background: #fff;
+    color: #648880;
+}
+
 .hero {
+    color: #fff;
     line-height: 44px;
     padding: 22px 80px 66px 80px;
     text-align: center;
@@ -197,6 +379,14 @@ Header
     text-transform: uppercase;
 }
 
+.primary-header a {
+    color: #fff;
+}
+
+.primary-header a:hover {
+    color: #a9b2b9;
+}
+
 /*
 ================
 Primary Footer
@@ -215,8 +405,13 @@ Primary Footer
     font-weight: 400;
 }
 
+.primary-footer a {
+    color: #fff;
+}
 
-
+.primary-footer a:hover {
+    color: #a9b2b9;
+}
 /*
 =================
 Body
