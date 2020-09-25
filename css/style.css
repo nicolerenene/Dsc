@@ -137,8 +137,8 @@ Body
 */
 
 body {
-    background: #11073fe3;
-    color: rgb(39, 58, 110);
+    background: #4f0879e3;
+    color: rgb(101, 58, 146);
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -192,7 +192,7 @@ Rows
 ============
 */
 
-.row{
+.row {
     background: #fff;
     min-width: 960px;
     padding: 66px 0 44px 0;  
@@ -210,9 +210,9 @@ Rows
 
 .row-alt {
     background: #cbe2c1;
-    background: -webkit-linear-gradient(to right, #a1d3b0, #f6fld3);
-    background: -moz-linear-gradient(to right, #a1d3b0, #f6fld3);
-    background: linear-gradient(to right, #a1d3b0, #f6fld3);
+    background: -webkit-linear-gradient(to right, #96c4c0, #f6f);
+    background: -moz-linear-gradient(to right, #96c4c0, #f6f);
+    background: linear-gradient(to right, #96c4c0, #f6f);
     padding: 44px 0 22px 0;
 }
 
@@ -478,6 +478,80 @@ Speakers
 
 .speaker {
     margin-bottom: 44px;
+}
+
+/* Schedule */
+
+table {
+    margin-bottom: 44px;
+    width: 100%;
+}
+
+table:last-child {
+    margin-bottom: 0;
+}
+
+th,
+td {
+    padding-bottom: 22px;
+    vertical-align: top;
+}
+
+th {
+    padding-right: 45px;
+    text-align: right;
+    width: 20%;
+}
+
+td {
+    width: 40%;
+}
+
+thead {
+    line-height: 44px;
+}
+
+thead th {
+    color: #648880;
+    font-size: 24px;
+}
+
+tbody th {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+
+tbody td {
+    border-top: 1px solid #dfe2e5;
+    padding-top: 21px;
+}
+
+tbody td:first-of-type {
+    padding-right: 15px;
+}
+
+tbody td:last-of-type {
+    padding-left: 15px;
+}
+
+tbody td:only-of-type {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table a {
+    color: #888;
+}
+
+table h4 {
+    margin-bottom: 0;
+}
+
+.schedule-offset {
+    color: #a9b2b9;
 }
 
 /* Register */
